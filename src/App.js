@@ -1,25 +1,20 @@
+/*
+ * @Author: 吴灏
+ * @Date: 2020-08-10 09:55:40
+ * @LastEditors: 吴灏
+ * @LastEditTime: 2020-08-19 14:43:04
+ * @Description: file content
+ */
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ErrorBoundary from './component/ErrorBoundary/index'
+import ErrorBoundaryTest from './pages/ErrorBoundary/Child/index'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary>
+      <ErrorBoundaryTest />
+    </ErrorBoundary>
+    
   );
 }
 
